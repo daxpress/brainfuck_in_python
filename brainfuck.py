@@ -118,7 +118,7 @@ class BrainfuckMachine():
         
     def _print_current(self):
         """prints the value inside the tape cell as a char"""
-        print(chr(self.tape[self.head]))
+        print(chr(self.tape[self.head]), end="")
         
     class HeadOverflow(Exception):
         """Raised when the head points to a value out of the [0, len] range"""
